@@ -294,7 +294,7 @@ file name and then merges the marked PDF files into this new file."
   (when (pdftk-check-marked-files-are-pdf)
     (let* ((default-output-file "new-file.pdf")
            (output-file (read-file-name "Output file: " nil nil nil default-output-file))
-           (filenames dired-queue))
+           (filenames pdftk-queue))
       (pdftk-merge filenames output-file))))
 
 (defun pdftk-check-marked-files-are-pdf ()
