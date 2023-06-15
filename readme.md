@@ -36,12 +36,13 @@ available in the system's PATH.
 
 Mark PDF files for merging:
 - Move the cursor to a PDF file and use `pdftk-mark-enqueue` (bound to
-  `M-m') to mark and enqueue the file.
+  `M-m) to mark and enqueue the file.
 
-Unmark PDF files from the merge qeueu:
+Unmark PDF files from the merge queue:
 - Move the cursor to a marked PDF file and use `pdftk-unmark-deqeueu`
-  (bound to M-u) to unmark and dequeue the file.
-- To unmark all files in the merge queue, use `pdftk-unmark-all-dequeue`.
+  (bound to `M-u`) to unmark and dequeue the file.
+- To unmark all files in the merge queue, use
+  `pdftk-unmark-all-dequeue` or `dired-unmark-all-marks`.
 
 The Dired buffer will display a visual indicator showing the position
 of each file in the merge queue. The marked files can be merged using
@@ -94,6 +95,6 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 Free as defined in the [MIT](https://choosealicense.com/licenses/mit/)
 license.
 
-## Acknowledgements
+## Acknowledgments
 Arthur Miller for writing the dired-queue package, which is used to
 queue the PDF files for merging.
